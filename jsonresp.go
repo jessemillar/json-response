@@ -4,7 +4,7 @@ import "github.com/labstack/echo"
 
 // Response makes RESTful responses JSON friendly
 type Response struct {
-	Response string `json:"message"`
+	Response string `json:"response"`
 }
 
 // Create returns an Echo error message in proper JSON format
