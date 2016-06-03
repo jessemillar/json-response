@@ -5,6 +5,11 @@ JSON wants returned values to be in key-value format. This package removes a cou
 ### Dependencies
 - [Echo](https://labstack.com/echo)
 
+### Installation
+```
+go get github.com/jessemillar/jsonresp
+```
+
 ### Usage
 ```
 import "github.com/jessemillar/jsonresp"
