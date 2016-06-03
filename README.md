@@ -7,10 +7,10 @@ JSON wants returned values to be in key-value format. This package removes a cou
 
 ### Usage
 ```
-func SampleFunction(c echo.Context) error {
+func SampleFunction(context echo.Context) error {
 	err := functionThatReturnsAnError()
 	if err != nil {
-		return jsonresp.Create(c, http.StatusBadRequest, "Could not read request body: "+err.Error())
+		return jsonresp.Create(context, http.StatusBadRequest, "Could not read request body: "+err.Error())
 	}
 }
 ```
