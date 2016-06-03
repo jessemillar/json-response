@@ -7,6 +7,9 @@ JSON wants returned values to be in key-value format. This package removes a cou
 
 ### Usage
 ```
+import "github.com/jessemillar/jsonresp"
+```
+```
 func SampleFunction(context echo.Context) error {
 	err := functionThatReturnsAnError()
 	if err != nil {
