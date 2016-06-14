@@ -1,16 +1,16 @@
-### json-response
+# json-response
 
 JSON wants returned values to be in key-value format. This package removes a couple lines of code I got tired of copypasta-ing between projects.
 
-### Dependencies
+## Dependencies
 - [Echo](https://labstack.com/echo)
 
-### Installation
+## Installation
 ```
 go get github.com/jessemillar/jsonresp
 ```
 
-### Usage
+## Usage
 ```
 import "github.com/jessemillar/jsonresp"
 ```
