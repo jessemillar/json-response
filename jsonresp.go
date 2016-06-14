@@ -2,14 +2,13 @@ package jsonresp
 
 import "github.com/labstack/echo"
 
-// Response makes RESTful responses JSON friendly
-type Response struct {
+type response struct {
 	Response string `json:"response"`
 }
 
-// Create returns an Echo error message in proper JSON format
-func Create(c echo.Context, httpStatus int, message string) error {
-	response := &Response{
+// New returns an Echo error message in proper JSON format
+func New(c echo.Context, httpStatus int, message string) error {
+	response := &response{
 		Response: message,
 	}
 
