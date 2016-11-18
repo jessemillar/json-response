@@ -14,7 +14,7 @@ import "github.com/jessemillar/jsonresp"
 func SampleFunction(writer http.ResponseWriter, request *http.Request) {
 	err := functionThatReturnsAnError()
 	if err != nil {
-		return jsonresp.New(writer, http.StatusBadRequest, "Could not read request body: "+err.Error())
+		jsonresp.New(writer, http.StatusBadRequest, "Could not read request body: "+err.Error())
 	}
 }
 ```
